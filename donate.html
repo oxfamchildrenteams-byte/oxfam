@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate – Gaza Children donation </title>
+  <style>
+    :root{
+      --green:#4CAF50;
+      --dark:#1a1a1a;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif; background:#f7f7f7; color:#222;}
+    header{background:#fff;border-bottom:3px solid var(--green);padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+    header .brand{display:flex;gap:10px;align-items:center}
+    header img{height:38px}
+    header a{color:var(--green);text-decoration:none;font-weight:bold}
+    .wrap{max-width:900px;margin:32px auto;padding:0 16px}
+    .hero{background:var(--green);color:#fff;padding:28px;border-radius:16px;text-align:center;margin-bottom:18px}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:820px){.grid{grid-template-columns:2fr 1fr}}
+    .card{background:#fff;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.06);padding:20px}
+    h1{font-size:26px;margin-bottom:6px;text-transform:uppercase}
+    h2{font-size:20px;margin:6px 0 14px}
+    p.lead{opacity:.95}
+    label{display:block;margin-bottom:6px;font-weight:bold}
+    input,select,textarea{
+      width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;margin-bottom:14px;font-size:15px;
+    }
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .btn{
+      display:inline-block;background:#fff;border:2px solid var(--green);color:var(--green);
+      padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;cursor:pointer;
+      transition:.2s;
+    }
+    .btn.primary{background:var(--green);color:#fff;border-color:var(--green)}
+    .btn:hover{transform:translateY(-1px)}
+    .muted{color:black;font-size:13px}
+    .bank{
+      background:#f0fff1;border:1px dashed var(--green);padding:14px;border-radius:12px;font-size:15px;
+    }
+    footer{color:#666;text-align:center;font-size:13px;margin:26px 0}
+    .donation-container {
+      width: 80%;
+      max-width: 600px;
+      background: #ddd;
+      border-radius: 25px;
+      overflow: hidden;
+      margin: 0 auto;
+      height: 40px;
+      border: 2px solid #333;
+    }
+
+    .donation-bar {
+      height: 100%;
+      width: 0%;
+      background: green;
+      text-align: center;
+      line-height: 40px;
+      color: white;
+      font-weight: bold;
+      transition: width 1s, background 1s;
+    }
+
+    .amount-text {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    .circle{
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      margin: 50px;
+      display: flex;
+    }
+    span{
+        color:rgb(198, 252, 5);
+}
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="Logo_of_Oxfam_(cropped).png" alt="Logo">
+      <strong style="color:var(--green);">Gaza <span>Children </span> Support</strong>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <div class="wrap">
+    <section class="hero">
+      <h1>Support Gaza’s Children</h1>
+      <p class="lead">Your donation funds food, safe water, trauma care, and education support. Thank you. 💚</p>
+    </section>
+
+<div class="donation-container">
+    <div id="donationBar" class="donation-bar">0%</div>
+  </div>
+
+  <div class="amount-text" style="display: none;">
+    Raised: $<span id="raised">20000</span> / $100,000
+  </div>
+<div>
+<div class="circle" style="background:green;"><h2 style="padding:5px 18px; margin-top: -9px;">Others</h2></div>
+
+<div class="circle" style="background:orange;"><h2  style="padding:5px 18px; margin-top: -9px;">Foods</h2></div>
+<div class="circle" style="background: blue;"><h2  style="padding:5px 18px; margin-top: -9px;">Medical Aid </h2></div>
+ <div class="circle" style="background:purple;"><h2 style="padding:5px 18px; margin-top: -9px;">Shelter </h2></div>
+<div class="circle" style="background:red;"><h2 style="padding:5px 18px; margin-top: -9px;">Total </h2></div>
+
+
+
+
+
+
+</div>
+    
+      <div>
+    <button type="submit" class="btn primary"><a style="text-decoration: none; color: white;" href="mailto:oxfamchildrenteams@gmail.com">Message us on gmail to donate </a></button>
+          <p class="muted"> At Oxfam Children, We are committed to ensuring a secure and trustworthy donation process for our community. To protect you and platform from fraudulent activities, we are temporarily not accepting card payments. Instead we kindly ask all donors to contact us directly via email to arrange your contribution.</p>
+        </form>
+      </div>
+
+      <!-- Alternative: Bank Transfer Details -->
+      <aside class="card">
+        <h2>How To Donate</h2>
+        <div class="bank">
+          <p><strong>Currency type:</strong>USD/EUR</p>
+
+          <p><strong>Send an email to:</strong>oxfarmchildrenteams@gmail.com</p>
+          <p><strong>include your name & amount you want to donate:</strong> e.g Johnson $200.</p>
+          <br>
+          <p> We'll reply to you shortly to send you the details and acknowledge your donation</p>
+        </div>
+        <p class="muted" style="margin-top:10px;">
+      We sincerely apologize for any inconvenience caused by accepting only USD and EUR.
+        </p>
+      </aside>
+    </div>
+  <a href="mailto:oxfamchildrenteams@gmail.com" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+</svg> Contact Us</a>
+
+    <footer>
+      © <span id="yr"></span> Gaza Children Aid • Registered NGO • Secure payments
+    </footer>
+  </div>
+
+  <!-- Paystack Inline (Replace with your real public key) -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script>
+    let goal = 100000;
+    let raised = 19850;
+    const bar = document.getElementById("donationBar");
+    const raisedText = document.getElementById("raised");
+
+    function updateBar() {
+      // Calculate percentage
+      let percent = (raised / goal) * 100;
+      if (percent > 100) percent = 100;
+
+      // Update bar width and text
+      bar.style.width = percent + "%";
+      bar.textContent = Math.floor(percent) + "%";
+
+      // Update raised amount text
+      raisedText.textContent = raised.toLocaleString();
+
+      // Change colors based on milestones
+      if (raised >= 100000) {
+        bar.style.background = "red";
+      } else if (raised >= 80000) {
+        bar.style.background = "purple";
+      } else if (raised >= 50000) {
+        bar.style.background = "blue";
+      } else if (raised >= 30000) {
+        bar.style.background = "orange";
+      } else {
+        bar.style.background = "green";
+      }
+    }
+
+    // Initial load
+    updateBar();
+
+    // Simulate automatic donation increase every 20 hours (demo: every 5 sec)
+    setInterval(() => {
+      if (raised < goal) {
+        raised +=0.09; // increase by $100
+        updateBar();
+
+      }
+    }, 5000); // <- change to 20 hours = 20 * 60 * 60 * 1000 in real usage
+  </script>
+</body>
+</html>
